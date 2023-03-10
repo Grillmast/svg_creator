@@ -38,25 +38,25 @@ const questions = [
 ];
 
 (async () => {
-    const { default: inquirer } = await import('inquirer');
+  await inquirer.prompt([]);
 
-inquirer.prompt(questions).then(async answers => {
-const svgDoc = SVG(svg);
-const background = svgDoc.rect(500, 500).fill(answers.background);
-const text = svgDoc.text(answers.text).fill(answers.color).move(50, 50);
+  inquirer.prompt(questions).then(async answers => {
+    const svgDoc = SVG(svg);
+    const background = svgDoc.rect(500, 500).fill(answers.background);
+    const text = svgDoc.text(answers.text).fill(answers.color).move(50, 50);
 
-  let shape;
-  if (answers.shape === 'square') {
-    shape = svgDoc.square(100).move(200, 200);
-  } else if (answers.shape === 'circle') {
-    shape = svgDoc.circle(100).move(200, 200);
-  } else if (answers.shape === 'triangle') {
-    shape = svgDoc.polygon('50,0 100,100 0,100').move(200, 200);
-  }
+    let shape;
+    if (answers.shape === 'square') {
+      shape = svgDoc.square(100).move(200, 200);
+    } else if (answers.shape === 'circle') {
+      shape = svgDoc.circle(100).move(200, 200);
+    } else if (answers.shape === 'triangle') {
+      shape = svgDoc.polygon('50,0 100,100 0,100').move(200, 200);
+    }
 
- await fs.writeFileSync('mySvgFile.svg', svgDoc.svg());
-  console.log('SVG file saved');
-}).catch(error => {
-  console.log(error);
-});   
-});
+    await fs.writeFile('mySvgFile.svg', svgDoc.svg());
+    console.log('SVG file saved');
+  }).catch(error => {
+    console.log(error);
+  });
+})();
