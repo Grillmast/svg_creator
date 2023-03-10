@@ -40,7 +40,7 @@ const questions = [
 (async () => {
     const { default: inquirer } = await import('inquirer');
 
-inquirer.prompt(questions).then(answers => {
+inquirer.prompt(questions).then(async answers => {
 const svgDoc = SVG(svg);
 const background = svgDoc.rect(500, 500).fill(answers.background);
 const text = svgDoc.text(answers.text).fill(answers.color).move(50, 50);
@@ -54,7 +54,7 @@ const text = svgDoc.text(answers.text).fill(answers.color).move(50, 50);
     shape = svgDoc.polygon('50,0 100,100 0,100').move(200, 200);
   }
 
-  fs.writeFileSync('mySvgFile.svg', svgDoc.svg());
+ await fs.writeFileSync('mySvgFile.svg', svgDoc.svg());
   console.log('SVG file saved');
 }).catch(error => {
   console.log(error);
