@@ -17,13 +17,13 @@
     [MIT](https://opensource.org/license/mit-0/)
 
   ## Features
-  N/A
+  A quick app using Node to generate an svg image. Select between multiple colors and choose from three different shapes.  
 
   ## How to Use This Application
-  N/A
+  Fork the code into your IDE. Ensure you have the proper dependencies installed. Open your integrated terminal and run node. node index.js will prompt the questions.
 
   ## Tests 
-  N/A
+  There are multiple tests involved. Each for a particular shape. Currently you will get a pass and a fail as multiple variables are at fault. Will continue to debug.
   
   ## Contributing
   N/A
