@@ -1,26 +1,30 @@
-svg_generator
-License: MIT
-Description
-An svg logo maker for those who would like to create a unique logo for themselves or their projects.
+# svg_generator
+  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg" />
 
-Table of Contents
-Installation
-Features
-Usage
-Tests
-Contributing
-License
-This project is licensed under the MIT license.
+  ## Description
+  An svg logo maker for those who would like to create a unique logo for themselves or their projects. 
 
-[MIT](https://opensource.org/license/mit-0/)
-Features
-N/A
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Features](#features)
+  * [Usage](#usage)
+  * [Tests](#tests)
+  * [Contributing](#contributing)
+  ## License
 
-How to Use This Application
-N/A
+    This project is licensed under the MIT license.
 
-Tests
-N/A
+    [MIT](https://opensource.org/license/mit-0/)
 
-Contributing
-N/A
+  ## Features
+  N/A
+
+  ## How to Use This Application
+  N/A
+
+  ## Tests 
+  N/A
+  
+  ## Contributing
+  N/A
+  
